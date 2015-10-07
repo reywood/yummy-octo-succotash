@@ -1,0 +1,18 @@
+<template name="glyphicons">
+	<div class="row">
+		<div class="col-xs-12">
+			<h2>Glyphicons</h2>
+		</div>
+	</div>
+	<div class="row">
+		{{#each glyphNames}}
+			{{>glyphicon}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="glyphicon">
+	<div class="col-xs-2 col-sm-1">
+		<span class="glyphicon glyphicon-{{name}}" title="{{name}}"></span>
+	</div>
+</template>
